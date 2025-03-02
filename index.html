@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Future Art</title>
+  <title>Future Art asle</title>
   <style>
     /* General Reset */
     * {
@@ -160,6 +160,63 @@
       }
     }
 
+    /* About Us and Services Section */
+    .info-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 50px auto;
+    }
+
+    #services1, #services2 {
+      flex: 1;
+      max-width: 500px;
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      color: black;
+    }
+
+    /* Image Styling */
+    #services1 img, #services2 img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+
+
+    /* New Services Section Heading */
+    
+
+    .services-container {
+  width: 100%; /* Full width of the viewport */
+  height: 40px;
+  background-color: #333; /* Background color */
+  padding: 10 px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeInUp 1s forwards; /* Fade-in animation */
+  color: white;
+}
+
+/* About Us Section */
+#abtus img {
+  width: 100%; /* Full width of the screen */
+  height: 100vh; /* Full height of the viewport */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+
     /* Keyframes for Animations */
     @keyframes fadeIn {
       0% {
@@ -213,13 +270,33 @@
         <img src="pc2.png" alt="Team members collaborating at a company event" class="hero-img">
         <img src="pic1.png" alt="Team Collaboration" class="hero-img">
         <img src="pic3.png" alt="Successful Campaign" class="hero-img">
-    </div>
+    </div> 
 </section>
 
 <!-- About Us Section -->
-<section>
+<section id="abtus">
   <img src="aboutus.png" alt="Team members collaborating at a company event">
 </section>
+
+
+<div class="services-container">
+<!-- Services Heading -->
+
+  <h1>Our Services</h1>
+
+</div>
+<!-- Info Section for Services -->
+<div class="info-container">
+  <!-- Services Section 1 -->
+  <section id="services1">
+    <img src="Services1.png" alt="Team members collaborating at a company event">
+  </section>
+
+  <!-- Services Section 2 -->
+  <section id="services2">
+    <img src="Services2.png" alt="Team members collaborating at a company event">
+  </section>
+</div>
 
 </body>
 </html>
