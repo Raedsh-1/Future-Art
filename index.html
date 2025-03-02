@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Future Art</title>
+  <title>Future Art </title>
   <style>
     /* General Reset */
     * {
@@ -211,10 +211,19 @@
 
 /* About Us Section */
 #abtus img {
-  width: 100%; /* Full width of the screen */
-  height: 100vh; /* Full height of the viewport */
-  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  width: 100%; /* Make the image span the full width of the screen */
+  height: auto; /* Ensure the image's height adjusts automatically to its width */
+  object-fit: cover; /* Keeps the image's aspect ratio while covering the section */
+  object-position: center; /* Centers the image */
 }
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+  #abtus img {
+    height: 50vh; /* Make the image height 50% of the viewport height on smaller screens */
+  }
+}
+
 
 
     /* Keyframes for Animations */
